@@ -14,6 +14,8 @@ public class Task {
 	private String tdescription;
 	private String tcreator;
 	private String ttaker;
+	private boolean is_done;
+	
 	public int getTid() {
 		return tid;
 	}
@@ -44,10 +46,11 @@ public class Task {
 	public void setTtaker(String ttaker) {
 		this.ttaker = ttaker;
 	}
-	@Override
-	public String toString() {
-		return "Task [tid=" + tid + ", tname=" + tname + ", tdescription=" + tdescription + ", tcreator=" + tcreator
-				+ ", ttaker=" + ttaker + "]";
+	public boolean isIs_done() {
+		return is_done;
+	}
+	public void setIs_done(boolean is_done) {
+		this.is_done = is_done;
 	}
 	
 }
